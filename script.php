@@ -1,3 +1,4 @@
 <?php
-   echo 'Bonjour! Ca marche! \n';
+   echo 'Bonjour! Ca marche!';
+   echo "\n";
 ?>
