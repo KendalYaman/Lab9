@@ -1,3 +1,3 @@
 <?php
-   echo 'Bonjour! Ca marche!';
+   echo 'Bonjour! Ca marche! \n';
 ?>
