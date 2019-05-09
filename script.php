@@ -3,6 +3,7 @@
    $result = file_get_contents($url);
 
    print($result);
+   
    echo "\n"
 
 ?>
