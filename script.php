@@ -7,7 +7,7 @@ print($result);
 if (strpos($result, 'cat') !== false) {
 	echo 'true';
 }else{
-	echo "nope"
+	echo "nope";
 }
 
 echo "\n"
