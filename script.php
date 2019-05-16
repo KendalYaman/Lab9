@@ -23,7 +23,7 @@ while ($i < 25)
 
 
 
-$result = file_get_contents($url);
+/*$result = file_get_contents($url);
 
 print($result);
 
@@ -34,7 +34,7 @@ if (strpos($result, 'cat') !== false) {
 }else{
 	echo "\n";
 	echo "nope";
-}
+}*/
 
 echo "\n";
 
