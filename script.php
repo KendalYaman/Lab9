@@ -22,7 +22,7 @@
 $monfichier = fopen('outputSQL.txt', 'r+');
 fseek($monfichier, 0); 
 //Marche admin final
-for($id = 1; $id <= 99; $id++){
+for($id = 1; $id <= 100; $id++){
 	print "\n";
 	fputs($monfichier, "\n");
 	fputs($monfichier, "\n");
