@@ -9,6 +9,18 @@
 //Cette partie est pour l'username "brute force"
 
 
+
+
+foreach(range(32,126)  as $i) 
+{ 
+    echo "The character equivalent of  
+                 ASCII value of ", $i, " is "; 
+    echo chr($i), "\n"; 
+} 
+
+
+
+/* Marche admin final
 $size = 0;
 while ($size < 25)
 {
@@ -63,7 +75,7 @@ while ($sizepwd < 25)
 	$sizepwd++;
 }
 
-echo 'password ';
+echo 'password: ';
 //print $sizepwd;
 
 
@@ -81,6 +93,10 @@ for ($i = 1; $i <= $sizepwd; $i++) {
 		}
 	}   
 }
+*/
+
+
+
 
 
 /*Ceci marche
