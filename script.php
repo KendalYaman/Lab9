@@ -14,7 +14,7 @@ for ($i = 1; $i <= 5; $i++) {
 		$result = file_get_contents($url);
 		if (strpos($result, 'cat') !== false) {
 			echo "\n";
-			print "$letter"
+			print "$letter";
 			break;
 		}else{
 			//echo "\n";
