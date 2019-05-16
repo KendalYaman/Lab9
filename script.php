@@ -40,7 +40,7 @@ for($id = 1; $id <= 99; $id++){
 		$size++;
 	}
 
-	echo "size: $size : username: ";
+	echo "username: ";
 	//print $size;
 
 
