@@ -12,7 +12,7 @@
 } */
 
 foreach (range('A', 'Z') as $column){
-         echo "<td>  $column </td>";
+         echo "$column \n";
 }   
 
 /*Ceci marche
