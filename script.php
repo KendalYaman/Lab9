@@ -78,7 +78,7 @@ while ($sizepwd < 25)
 echo 'password: ';
 //print $sizepwd;
 
-
+$letter = "";
 for ($i = 1; $i <= $sizepwd; $i++) {
     foreach (range(32,126) as $character){
     	$letter = char($character);
