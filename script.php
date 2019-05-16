@@ -87,7 +87,7 @@ for ($i = 1; $i <= $sizepwd; $i++) {
 		$result = file_get_contents($url);
 		if (strpos($result, 'cat') !== false) {
 
-			print "$letter";
+			//print "$letter";
 			break;
 		}else{
 			
