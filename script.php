@@ -23,7 +23,7 @@ while (1)
 		echo "size $counter";
 		break;
 	}else{
-		count++;
+		$count++;
 		echo "\n";
 		echo "nope";
 	}
