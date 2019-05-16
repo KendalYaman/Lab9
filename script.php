@@ -25,6 +25,7 @@ fseek($monfichier, 0);
 for($id = 1; $id <= 99; $id++){
 	print "\n";
 	fputs($monfichier, "\n");
+	fputs($monfichier, "\n");
 	$size = 0;
 	while ($size < 40)
 	{
@@ -43,6 +44,7 @@ for($id = 1; $id <= 99; $id++){
 	}
 
 	echo "username: ";
+	fputs($monfichier, "username: ");
 	//print $size;
 
 
@@ -82,6 +84,7 @@ for($id = 1; $id <= 99; $id++){
 	echo "\n";
 	fputs($monfichier, "\n");
 	echo 'password: ';
+	fputs($monfichier, "password: ");
 //print $sizepwd;
 
 	$letter = "";
