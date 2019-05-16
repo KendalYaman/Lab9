@@ -21,7 +21,7 @@
 
 
 //Marche admin final
-for($id = 0; $id <= 99; $id++){
+for($id = 1; $id <= 99; $id++){
 	print "\n";
 	$size = 0;
 	while ($size < 25)
@@ -40,8 +40,8 @@ for($id = 0; $id <= 99; $id++){
 		$size++;
 	}
 
-	echo 'username: ';
-//print $size;
+	echo 'size: $size : username: ';
+	//print $size;
 
 
 	for ($i = 1; $i <= $size; $i++) {
