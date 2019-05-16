@@ -26,8 +26,8 @@ while ($size < 25)
 	$size++;
 }
 
-echo 'size is ';
-print $size;
+echo 'username: ';
+//print $size;
 
 
 for ($i = 1; $i <= 5; $i++) {
@@ -63,8 +63,8 @@ while ($sizepwd < 25)
 	$sizepwd++;
 }
 
-echo 'sizepwd is ';
-print $sizepwd;
+echo 'password ';
+//print $sizepwd;
 
 
 for ($i = 1; $i <= $sizepwd; $i++) {
