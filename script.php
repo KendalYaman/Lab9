@@ -10,12 +10,12 @@ while ($i < 25)
 	$result = file_get_contents($url);
 	if (strpos($result, 'cat') !== false) {
 		echo "\n";
-		echo 'true';
+		echo 'size is';
 		print $i;
 		break;
 	}else{
-		echo "\n";
-		echo "nope";
+		//echo "\n";
+		//echo "nope";
 	}
 
 	$i++;
