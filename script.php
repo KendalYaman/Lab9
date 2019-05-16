@@ -11,7 +11,7 @@
     echo "The number is: $i <br>";
 } */
 
-foreach (range('A', 'Z') as $column){
+foreach (range('A', 'z') as $column){
          echo "$column \n";
 }   
 
