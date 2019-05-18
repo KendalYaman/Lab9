@@ -89,7 +89,7 @@ for($id = 1; $id <= 100; $id++){
 
 	$letter = "";
 	for ($i = 1; $i <= $sizepwd; $i++) {
-		foreach (range(33,127) as $x){
+		foreach (range(38,127) as $x){
 			$letter = utf8_encode(chr($character));
 			if($letter == '+'){
 				$letter = "%2B";
