@@ -89,7 +89,7 @@ for($id = 1; $id <= 100; $id++){
 
 	$letter = "";
 	for ($i = 0; $i <= $sizepwd; $i++) {
-		foreach (range(30,127) as $character){
+		foreach (range(33,127) as $character){
 			$letter = chr($character);
 			//$letter = mb_convert_encoding (chr($character), 'UTF-8', 'ISO-8859-1');
          	//echo "$letter \n";
